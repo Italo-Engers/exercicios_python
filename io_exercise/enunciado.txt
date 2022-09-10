@@ -1,0 +1,2 @@
+Voce precisa criar 3 classes. Uma classe BaseFileReader que define um metodo publico sum_prices(path_to_file).
+ Vc precisa fazer duas classes que herdam essa separadamente
