@@ -1,4 +1,4 @@
-import csv
+
 
 class BaseFileReader():
 
@@ -7,16 +7,7 @@ class BaseFileReader():
         self.tipo_arquivo = tipo_arquivo
         self.soma = None
 
-    def calculate_sum(self, file_path):  
-
-        with open(file_path, mode="r") as csv_file:
-            reader = csv.dictreader(csv_file)
-
-            for values in reader:
-                self.soma = sum(values[1])
-                return self.soma
-
-            print('-fini-')
+    def calculate_sum(self, file_path):       
 
         raise NotImplementedError()
 
